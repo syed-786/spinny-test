@@ -1,0 +1,61 @@
+input[type=text] {background: rgba(255,255,255,.05);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-left: 1px solid rgba(255,255,255,.4);
+    border-top: 1px solid rgba(255,255,255,.4);
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    border-right: transparent;
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    outline: 0;
+    margin-left: 70px;
+    margin-top: 25px;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: auto 50px;
+}
+
+.header-container{
+    background-color: #1c7ac2;
+    width:70%;
+    position: fixed;
+}
+.button-container {
+    background: rgba(255,255,255,.05);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-right: 1px solid rgba(255,255,255,.4);
+    border-top: 1px solid rgba(255,255,255,.4);
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    border-left: transparent;
+    width: 10%;
+    padding: 20px ;
+    box-sizing: border-box;
+    color: rgba(255,255,255,.8);
+    cursor: pointer;
+    text-transform: none;
+    overflow: visible;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+
+.url-text {
+    color:white;
+}

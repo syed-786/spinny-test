@@ -1,0 +1,39 @@
+.container-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.anime-card {
+    height: 290px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.anime-image {
+    height: 65%;
+    width: 100%;
+}
+
+.anime-name {
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.anime-name span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
