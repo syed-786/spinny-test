@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/spinny-test/static/css/main.28b044ad.chunk.css",
-    "main.js": "/spinny-test/static/js/main.182db69a.chunk.js",
-    "main.js.map": "/spinny-test/static/js/main.182db69a.chunk.js.map",
+    "main.css": "/spinny-test/static/css/main.8c9bfce0.chunk.css",
+    "main.js": "/spinny-test/static/js/main.66620744.chunk.js",
+    "main.js.map": "/spinny-test/static/js/main.66620744.chunk.js.map",
     "runtime-main.js": "/spinny-test/static/js/runtime-main.f22b32eb.js",
     "runtime-main.js.map": "/spinny-test/static/js/runtime-main.f22b32eb.js.map",
     "static/js/2.9491aff0.chunk.js": "/spinny-test/static/js/2.9491aff0.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.77c2e59d.chunk.js": "/spinny-test/static/js/3.77c2e59d.chunk.js",
     "static/js/3.77c2e59d.chunk.js.map": "/spinny-test/static/js/3.77c2e59d.chunk.js.map",
     "index.html": "/spinny-test/index.html",
-    "static/css/main.28b044ad.chunk.css.map": "/spinny-test/static/css/main.28b044ad.chunk.css.map",
+    "static/css/main.8c9bfce0.chunk.css.map": "/spinny-test/static/css/main.8c9bfce0.chunk.css.map",
     "static/js/2.9491aff0.chunk.js.LICENSE.txt": "/spinny-test/static/js/2.9491aff0.chunk.js.LICENSE.txt",
     "static/media/loader.01b22d1d.gif": "/spinny-test/static/media/loader.01b22d1d.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.f22b32eb.js",
     "static/js/2.9491aff0.chunk.js",
-    "static/css/main.28b044ad.chunk.css",
-    "static/js/main.182db69a.chunk.js"
+    "static/css/main.8c9bfce0.chunk.css",
+    "static/js/main.66620744.chunk.js"
   ]
 }
