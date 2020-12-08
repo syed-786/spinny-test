@@ -9,10 +9,13 @@ import loader from './loader.gif'
 
 class AnimeContainer extends PureComponent {
 
+
+    //this will initialy load the data on first render
     componentDidMount = () => {
         this.props.fetchAnimeData();
     }
 
+    //this will load more data on load more button click
     loadMoreHandler = () => {
         let {searchText, page} = this.props;
         this.props.fetchAnimeData(page, searchText);  
@@ -30,10 +33,11 @@ class AnimeContainer extends PureComponent {
             { isLoading ? 
                <img class='img-container' src ={loader}  alt='loading' />
                 : 
+                <>
                 <AnimeList  animeDataList = {animeDataList}/>
+                <button className='load-button' onClick={this.loadMoreHandler}>Load more...</button>
+                </>
             }
-
-             <button className='load-button' onClick={this.loadMoreHandler}>Load more...</button>
             </div>
             </div>
         )

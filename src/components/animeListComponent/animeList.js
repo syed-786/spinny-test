@@ -11,9 +11,7 @@ const AnimeList = (props) => {
                             <img className='anime-image' src={data.image_url} alt='img'/>
                             <div className='anime-name'>{data.title}</div>
                         </Col>
-                    </Row>
-                    // {/* <div key={data.mal_id}>{data.title}</div> */}
-                
+                    </Row> 
             )
          })
          : 

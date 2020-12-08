@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
-        <AnimeContainer />
+        <AnimeContainer /> {/* main  container component for app  */}
       </Provider>
     </div>
   );

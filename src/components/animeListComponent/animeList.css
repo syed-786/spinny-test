@@ -8,13 +8,18 @@
 
 .anime-card {
     height: 290px;
-    width: 150px;
+    width: 161px;
     margin: 10px;
     border-radius: 8px;
     background: #fff;
     overflow: hidden;
 }
 
+.anime-card:hover{
+    cursor: pointer;
+    box-shadow: 2px 5px 14px rgba(0, 0, 0, 0.7);
+    transition: all 0.1s ease-in;
+}
 .anime-image {
     height: 65%;
     width: 100%;

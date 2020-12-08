@@ -11,14 +11,16 @@ const Header = (props) => {
         setSearchText(event.target.value);
         }
 
+
+        //this will dispatch action to search new data
     const search =(event) => {
         event.preventDefault();
         if(searchText === ''){
             alert("Please enter the search string");
             return;
         }
-        dispatch(pageReset());
-        dispatch(searchValue(searchText));
+        dispatch(pageReset());  //this will reset page on every new search
+        dispatch(searchValue(searchText)); 
         dispatch(fetchAnimeData(15,searchText));
     }
 

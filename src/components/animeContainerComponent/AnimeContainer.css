@@ -18,11 +18,17 @@
 }
 
 .img-container{
-    width:250px;
-    height:250px;
-    margin-bottom: 300px;
+    width:150px;
+    height:150px;
+    margin-bottom: 400px;
     margin-top: 160px;
     margin-left: 70px;
     position: relative;
     top:120px;
+}
+
+@media (max-width : 767px){
+    .img-container{
+        margin-left: 12px;
+    }
 }
