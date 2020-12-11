@@ -7,9 +7,9 @@
 }
 
 .anime-card {
-    height: 290px;
-    width: 161px;
-    margin: 10px;
+    height: 330px;
+    width: 185px;
+    margin: 20px;
     border-radius: 8px;
     background: #fff;
     overflow: hidden;
@@ -21,20 +21,21 @@
     transition: all 0.1s ease-in;
 }
 .anime-image {
-    height: 65%;
+    height: 70%;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .anime-name {
     width: 100%;
-    margin-top: 20px;
+    margin: 0 auto;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
     color: #343434;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .anime-name span {

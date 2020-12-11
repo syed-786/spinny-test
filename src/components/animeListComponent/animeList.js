@@ -6,7 +6,7 @@ const AnimeList = (props) => {
 
     const animeList = animeDataList.length ? animeDataList.map(data => {
             return (
-                    <Row>
+                    <Row key={data.mal_id}>
                         <Col className='anime-card' key={data.mal_id}>
                             <img className='anime-image' src={data.image_url} alt='img'/>
                             <div className='anime-name'>{data.title}</div>

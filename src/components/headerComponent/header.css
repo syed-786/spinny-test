@@ -16,7 +16,7 @@ input[type=text] {background: rgba(255,255,255,.05);
 button, input {
     overflow: visible;
 }
-button, input, optgroup, select, textarea {
+button, input{
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
@@ -58,4 +58,17 @@ button, select {
 
 .url-text {
     color:white;
+}
+
+
+@media (max-width : 767px){
+    input[type=text]{
+        min-width: 25%;
+        padding: 15px;
+    }
+
+    .button-container{
+        min-width: 10%;
+        padding: 15px ;
+    }
 }

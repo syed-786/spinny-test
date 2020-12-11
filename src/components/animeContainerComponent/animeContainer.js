@@ -17,8 +17,8 @@ class AnimeContainer extends PureComponent {
 
     //this will load more data on load more button click
     loadMoreHandler = () => {
-        let {searchText, page} = this.props;
-        this.props.fetchAnimeData(page, searchText);  
+        let {searchText, page, limit} = this.props;
+        this.props.fetchAnimeData(page, searchText, limit);  
     }
 
     render() {
@@ -31,7 +31,7 @@ class AnimeContainer extends PureComponent {
                 <Header />
 
             { isLoading ? 
-               <img class='img-container' src ={loader}  alt='loading' />
+               <img className='img-container' src ={loader}  alt='loading' />
                 : 
                 <>
                 <AnimeList  animeDataList = {animeDataList}/>
@@ -49,13 +49,14 @@ const mapStateToProps = (state) => {
         animeDataList : state.animeData,
         isLoading : state.isLoading,
         page : state.page,
-        searchText:state.searchText
+        searchText:state.searchText,
+        limit:state.limit
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
    return {
-        fetchAnimeData : (page,query) => dispatch(fetchAnimeData(page,query)) 
+        fetchAnimeData : (page,query,limit) => dispatch(fetchAnimeData(page,query,limit)) 
     }
 }
 

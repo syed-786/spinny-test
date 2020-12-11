@@ -38,12 +38,10 @@ export const searchValue = (searchText) => {
     }
 }
 
-export const fetchAnimeData = (page = 15, query ) => {
-  console.log("fetchAnimeData -> query", query)
-  console.log("fetchAnimeData -> limit", page)
+export const fetchAnimeData = (page = 1, query, limit=16) => {
     return (dispatch) => {
        dispatch(fetchAnimeRequest());
-        axios.get(`https://api.jikan.moe/v3/search/anime?q=${query}&limit=${page}`)
+        axios.get(`https://api.jikan.moe/v3/search/anime?q=${query}&limit=${limit}page=${page}`)
             .then(response => {
                 const animeData = response.data.results;
                 dispatch(fetchAnimeSuccess(animeData))

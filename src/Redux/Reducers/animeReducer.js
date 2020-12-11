@@ -3,8 +3,9 @@ import { FETCH_ANIME_REQUEST,FETCH_ANIME_SUCCESS,FETCH_ANIME_FAILURE,PAGE_RESET,
 const initialState = {
     animeData:[],
     isLoading: false,
-    page:15,
+    page:1,
     searchText: undefined,
+    limit:16,
     error:''
 }
 
@@ -18,13 +19,15 @@ const animeReducer = (state = initialState, action) => {
             ...state,
             isLoading: false,
             animeData: action.payload,
-            page:state.page+16,
+            page:      state.page+1,
+            limit:     state.limit+16,
             error: ''
         }
         case PAGE_RESET : return {
             ...state,
             animeData:[],
-            page:16
+            page:1,
+            limit:16
         }
         case SEARCH_TEXT : return {
             ...state,

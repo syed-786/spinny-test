@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { fetchAnimeData,pageReset,searchValue } from '../../Redux';
 import './header.css';
 
@@ -21,7 +21,7 @@ const Header = (props) => {
         }
         dispatch(pageReset());  //this will reset page on every new search
         dispatch(searchValue(searchText)); 
-        dispatch(fetchAnimeData(15,searchText));
+        dispatch(fetchAnimeData(1,searchText, 16));
     }
 
     return (
